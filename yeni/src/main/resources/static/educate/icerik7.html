@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>EDUCATE</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-edu-meeting.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+<!--
+
+TemplateMo 569 Edu Meeting
+
+https://templatemo.com/tm-569-edu-meeting
+
+-->
+
+<style>
+    /* Navbar Stili */
+        nav {
+            background-color: #333; /* Navbar arkaplan rengi */
+            color: white; /* Yazı rengi */
+            padding: 10px; /* Yatay ve dikey iç boşluklar */
+            text-align: center; /* Yazıların ortalanması */
+        }
+
+        nav select {
+            padding: 5px;
+            font-size: 16px;
+            background-color: #555; /* Kategori seçim listesinin arkaplan rengi */
+            color: white;
+        }
+
+        nav select:hover {
+            background-color: #eb9898; /* Kategori seçim listesinin hover rengi */
+        }
+
+        /* Sayfa Arkaplanı */
+        body {
+            background-color: #3e3a3a; /* Sayfa arkaplan rengi */
+            font-family: Arial, sans-serif; /* Yazı tipi */
+            margin: 0; /* Kenar boşluğu sıfırlama */
+            padding: 0; /* İç boşluğu sıfırlama */
+        }
+
+        /* Kurs Listesi Stili */
+        ul#course-list {
+            list-style-type: none; /* Sırasız liste işaretini kaldırma */
+            padding: 0;
+        }
+
+        ul#course-list li {
+            margin: 5px 0;
+        }
+
+        ul#course-list a {
+            text-decoration: none; /* Link altı çizgisini kaldırma */
+            color: #333; /* Link rengi */
+            display: block; /* Linkleri blok öğesi yapma */
+            padding: 10px;
+            background-color: #eee; /* Linklerin arkaplan rengi */
+            border-radius: 5px; /* Köşe yuvarlama */
+            transition: background-color 0.3s; /* Renk değişimi için geçiş efekti */
+        }
+
+        ul#course-list a:hover {
+            background-color: #ddd; /* Linklere hover efekti */
+        }
+
+        /* Kurs Ayrıntıları Stili */
+        #course-details {
+            background-color: rgb(238, 238, 238);
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Gölge efekti */
+        }
+
+        /* Kategori seçim listesi stillendirmeleri */
+        #category-select {
+            border: none;
+            border-radius: 8px; /* Kenarları yuvarlatma */
+            padding: 10px;
+            font-size: 16px;
+            width: 200px; /* İsteğe bağlı: Genişliği ayarlayabilirsiniz */
+            cursor: pointer;
+        }
+
+        /* Açılır menü stillendirmeleri */
+        #category-select option {
+            background-color: #333; /* Gri arka plan rengi */
+            color: white; /* Metin rengi */
+            border-radius: 8px; /* Kenarları yuvarlatma */
+        }
+
+        #h1{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        }
+        #h2{
+            float: left;
+        }
+        #h2 a{
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        #h2 a:hover{
+            background-color: rgb(45, 44, 44);
+        }
+
+</style>
+  </head>
+
+<body>
+  
+  <script>
+    alert('Kursa kaydolma işleminiz tamamlanmıştır.');
+</script> 
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <nav class="main-nav">
+                      <!-- ***** Logo Start ***** -->
+                      <a href="index.html" class="logo">
+                          EDUCATE
+                      </a>
+                      <!-- ***** Logo End ***** -->
+                      <!-- ***** Menu Start ***** -->
+                      <ul class="nav">
+                          <li><a href="#">Veri Bilimi</a></li>
+                          <li><a href="#">Web Geliştirme</a></li>
+                          <li><a href="#">Mobil</a></li> 
+                          <li><a href="#">Oyun</a></li> 
+                          <li><a href="#">Programlama Dilleri</a></li> 
+                          <li><a href="giris.html">Çıkış Yap</a></li> 
+                         
+                      </ul>        
+                      <a class='menu-trigger'>
+                          <span>Menu</span>
+                      </a>
+                      <!-- ***** Menu End ***** -->
+                  </nav>
+              </div>
+          </div>
+      </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <section class="section main-banner" id="top" data-section="section1">
+      <video autoplay muted loop id="bg-video">
+          <source src="resimler/educate.mp4" type="video/mp4" />
+      </video>
+
+      <div class="video-overlay header-text">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="caption">
+              <h2 style="margin-top: 70%">JavaScript Programlama Eğitimi<br>
+            kursuna hoşgeldiniz!</h2>
+              <p>Bu Kurstan Öğrenecekleriniz;<br>
+                A'dan Z'ye Javascript'in Temelleri ||| İnteraktif Siteler Yaratma
+                Formlar için hızlı geri bildirim ve doğrulama işlemleri ||| Gerçek Javascript Uygulamaları
+                Temiz, Modüler ve Sağlam JavaScript Kodu Yazımı
+              </p>
+          </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  </section>
+  <!-- ***** Main Banner Area End ***** -->
+
+  
+
+  <section class="upcoming-meetings" id="meetings">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h2 id="kategori">VİDEO MATERYALLER</h2>
+          </div>
+         
+          
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/rctJFP4-5nU" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/TAhxKO7otE8" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Ce6XERkWzJE" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/74fIJaNYPjs" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/qtUQZeVvvB8" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/zrxCf-rewuU" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/CARLdug7tjQ" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/j6mDOf5dfZM" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/u9g4BvSOgSM" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/CxjAAELdZVw" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/8zjOviHkAy8" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/jJP3K3zoGVo" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/iFyg3rxS4LE" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/3BqyWdp41m4" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/fUduT1WqgsQ" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/QXia3XTcLgQ" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/q6D3NPHcLNc" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/0YGolmvP6Pk" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/BTDgO51cDCE" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/ooLRklX0cdc" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/7ov9SdnnovY" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/QFY7lg0gZVQ" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/m2H9VIT_c48" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/ggjpBbTatKM" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-4">
+            </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="upcoming-meetings" id="meetings">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h2 id="kategori">PDF DOKÜMANLARI</h2>
+          </div>
+          <div class="ifra" style="margin-left: 25%;">
+            <iframe src="pdf/gubra5r3.pdf" width="70%" height="500px"></iframe>
+            <iframe src="pdf/javascript_tutorial.pdf" width="70%" height="500px"></iframe>
+          </div>
+        </div>
+        <div class="col-lg-4">
+            </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="upcoming-meetings" id="meetings">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h2>KURS SONU TESTİ</h2>
+          </div>
+        </div>
+        <div class="col-lg-4" style="margin-left: 35%;">
+          <div class="categories">
+            <h4>SORULAR</h4>
+            <ul>
+              <li><a href="#">
+                <div class="question">
+                    <p>Soru 1:JavaScript'te bir değişken tanımlamak için kullanılan anahtar kelime nedir?</p>
+                    <input type="radio" name="q1" value="0"> variable<br>
+                    <input type="radio" name="q1" value="20"> var <br>
+                    <input type="radio" name="q1" value="00"> let
+                </div>
+              </a></li><br>
+              <li><a href="#">
+                <div class="question">
+                    <p>Soru 2: console.log("Merhaba, Dünya!");<br>
+                        JavaScript kodu ile hangi işlem gerçekleştirilir?
+                    </p>
+                    <input type="radio" name="q2" value="0"> Bir kullanıcıdan veri alır.<br>
+                    <input type="radio" name="q2" value="0">  Bir resmi konsola getirir.<br>
+                    <input type="radio" name="q2" value="20">  Bir metin yazısını konsola yazdırır.
+                </div>
+              </a></li><br>
+              <li><a href="#">
+                <div class="question">
+                    <p>Soru 3: JavaScript'te bir döngü oluşturmak için kullanılan anahtar kelime nedir?
+                    </p>
+                    <input type="radio" name="q3" value="0">  repeat<br>
+                    <input type="radio" name="q3" value="20"> for<br>
+                    <input type="radio" name="q3" value="0"> loop
+                </div>
+              </a></li><br>
+              <li><a href="#">
+                <div class="question">
+                    <p>Soru 4: function topla(a, b) {<br>
+                        return a + b;<br>
+                        JavaScript kodu ile hangi işlem gerçekleştirilir?
+                    }</p>
+                    <input type="radio" name="q4" value="0"> Bir dizi oluşturur. <br>
+                    <input type="radio" name="q4" value="20"> İki sayıyı toplar ve sonucu döndürür.<br>
+                    <input type="radio" name="q4" value="0"> Liste oluşturur.
+                </div>
+              </a></li><br>
+              <li><a href="#">
+                <div class="question">
+                    <p>Soru 5:var sayi = 5;<br>
+                        if (sayi > 10) {<br>
+                            console.log("Sayı 10'dan büyük.");<br>
+                        } else {<br>
+                            console.log("Sayı 10'dan küçük veya eşit.");<br>
+                        }<br>
+                        JavaScript kodu ile hangi işlem gerçekleştirilir?
+                    </p>
+                    <input type="radio" name="q5" value="20">  Koşullu bir ifade kullanarak bir mesajı konsola yazdırır.<br>
+                    <input type="radio" name="q5" value="0">  Döngülü bir ifade kullanarak bir mesajı konsola yazdırır.<br>
+                    <input type="radio" name="q5" value="0">  Bir ifade kullanarak bir mesajı konsola yazdırır.
+                </div>
+              </a></li><br>  
+              <li><a href="#">
+                <div class="question">
+                    <p>Soru 6: JavaScript'te bir dizi (array) nasıl tanımlanır?
+                    </p>
+                    <input type="radio" name="q6" value="20"> var myArray = [1, 2, 3];<br>
+                    <input type="radio" name="q6" value="0">  var myArray = {1, 2, 3};<br>
+                    <input type="radio" name="q6" value="0">  array myArray = [1, 2, 3];
+                </div>
+              </a></li><br>   
+              <li><a href="#">
+                <div class="question">
+                    <p>Soru 7: JavaScript'te bir fonksiyonun parametreleri ve dönüş değeri olmadan çalışmasını sağlamak için kullanılan anahtar kelime nedir?
+                    </p>
+                    <input type="radio" name="q7" value="0"> function<br>
+                    <input type="radio" name="q7" value="0">  null<br>
+                    <input type="radio" name="q7" value="20"> void
+                </div>
+              </a></li><br> 
+              <li><a href="#">
+                <div class="question">
+                    <p>Soru 8: JavaScript'te bir dizi (array) nasıl tanımlanır?
+                    </p>
+                    <input type="radio" name="q8" value="20"> var myArray = [1, 2, 3];<br>
+                    <input type="radio" name="q8" value="0">  var myArray = {1, 2, 3};<br>
+                    <input type="radio" name="q8" value="0">  array myArray = [1, 2, 3];
+                </div>
+              </a></li><br>    
+              <li><a href="#">
+                <div class="question">
+                    <p>Soru 9: JavaScript'te bir HTML belgesindeki bir öğeyi bulmak için kullanılan fonksiyon nedir?
+                    </p>
+                    <input type="radio" name="q9" value="0"> getElement<br>
+                    <input type="radio" name="q9" value="20"> document.querySelector<br>
+                    <input type="radio" name="q9" value="0">  queryElement.querySelector
+                </div>
+              </a></li><br>   
+              <li><a href="#">
+                <div class="question">
+                    <p>Soru 10: var sayilar = [1, 2, 3, 4, 5];<br>
+                        var toplam = sayilar.reduce(function(accumulator, currentValue) {<br>
+                            return accumulator + currentValue;<br>
+                        }, 0);<br>
+                        console.log(toplam);<br>
+                        JavaScript kodu ne işe yarar?
+                    </p>
+                    <input type="radio" name="q10" value="0">  Bir dizi oluşturur.<br>
+                    <input type="radio" name="q10" value="0">  Dizi içindeki sayıların ortalamasını toplar.<br>
+                    <input type="radio" name="q10" value="20"> Dizi içindeki sayıların toplamını hesaplar ve konsola yazdırır.
+                </div>
+              </a></li><br>         
+            </ul>
+            <div id="result">
+                <button onclick="calculateScore()">Testi Kontrol Et</button>
+                <button id="resetButton" onclick="resetTest()">Testi Sıfırla ve Tekrar Deneyin</button>
+            </div>
+            <script>
+                function calculateScore() {
+                    // Her soru için cevapları al
+                    var q1Score = parseInt(document.querySelector('input[name="q1"]:checked').value);
+                    var q2Score = parseInt(document.querySelector('input[name="q2"]:checked').value);
+                    var q3Score = parseInt(document.querySelector('input[name="q3"]:checked').value);
+                    var q4Score = parseInt(document.querySelector('input[name="q4"]:checked').value);
+                    var q5Score = parseInt(document.querySelector('input[name="q5"]:checked').value);
+                    var q6Score = parseInt(document.querySelector('input[name="q6"]:checked').value);
+                    var q7Score = parseInt(document.querySelector('input[name="q7"]:checked').value);
+                    var q8Score = parseInt(document.querySelector('input[name="q8"]:checked').value);
+                    var q9Score = parseInt(document.querySelector('input[name="q9"]:checked').value);
+                    var q10Score = parseInt(document.querySelector('input[name="q10"]:checked').value);
+        
+                    // Toplam puanı hesapla
+                    var totalScore = q1Score + q2Score + q3Score + q4Score + q5Score+ q6Score + q7Score + q8Score + q9Score + q10Score;
+        
+                    // Sonucu göster
+                    var result = document.getElementById('result');
+                    if (totalScore >= 60) {
+                        result.innerHTML = '<p>Tebrikler! Testi başarıyla geçtin. Puanınız: ' + totalScore + '</p>';
+                    }
+                    if(totalScore <= 60){
+                        result.innerHTML = '<p>Üzgünüz, testi geçemediniz. Lütfen tekrar deneyin.</p>';
+                    }
+                }
+                
+        
+                function resetTest() {
+                    // Cevapları temizle
+                    var radios = document.querySelectorAll('input[type="radio"]');
+                    radios.forEach(function(radio) {
+                        radio.checked = false;
+                    });
+                    
+                    // Kullanıcıya mesaj göster
+                    alert('Test sıfırlandı. Yeniden başlayabilirsiniz.');
+                }
+            </script>
+            <style>
+                /* Soruları ve cevapları düzenleme */
+                    .question {
+                        margin-bottom: 20px;
+                    }
+
+                    p {
+                        font-size: 18px;
+                        margin-bottom: 10px;
+                    }
+
+                    input[type="radio"] {
+                        margin-right: 10px;
+                        vertical-align: middle;
+                    }
+
+                    /* Sonuç bölümü stillemesi */
+                    #result {
+                        text-align: center;
+                        margin-top: 20px;
+                    }
+
+                    button {
+                        font-size: 16px;
+                        padding: 10px 20px;
+                        background-color: #393939;
+                        color: #fff;
+                        border: 60%;
+                        cursor: pointer;
+                    }
+
+                    button:hover {
+                        background-color: #8c8d8e;
+                    }
+            </style>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  
+
+  <section class="contact-us" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 align-self-center">
+          <div class="row">
+            <div class="col-lg-12">
+              <form id="contact" action="" method="post">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h2>BİZİMLE İLETİŞİME GEÇİN</h2> <!--VERİSİ VERİTABANINDA TUTULABİLİR-->
+                  </div>
+                  <div class="col-lg-4">
+                    <fieldset>
+                      <input name="name" type="text" id="name" placeholder="ADINIZ...*" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-4">
+                    <fieldset>
+                    <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="MAİL ADRESİNİZ..." required="">
+                  </fieldset>
+                  </div>
+                  <div class="col-lg-4">
+                    <fieldset>
+                      <input name="subject" type="text" id="subject" placeholder="KONU...*" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <textarea name="message" type="text" class="form-control" id="message" placeholder="GÖRÜŞLERİNİZ..." required=""></textarea>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button type="submit" id="form-submit" class="button">GÖNDER</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="right-info">
+            <ul>
+              <li>
+                <h6>İletişim Numarası</h6>
+                <span>05392174859</span>
+              </li>
+              <li>
+                <h6>Mail Adresi</h6>
+                <span>dorhan23@gmail.com</span>
+              </li>
+              <li>
+                <h6>Adres</h6>
+                <span>Elazığ, Türkiye</span>
+              </li>
+              <li>
+                <h6>Website URL</h6>
+                <span>www.educate.tr</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Copyrıght © 2023 Educate Meetıng Co., Ltd. All Rıghts Reserved. 
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function (e) {
+          e.preventDefault();
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+    </script>
+</body>
+
+</body>
+</html>

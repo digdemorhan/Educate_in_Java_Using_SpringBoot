@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>EDUCATE</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-edu-meeting.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+<!--
+
+TemplateMo 569 Edu Meeting
+
+https://templatemo.com/tm-569-edu-meeting
+
+-->
+
+<style>
+    /* Navbar Stili */
+        nav {
+            background-color: #333; /* Navbar arkaplan rengi */
+            color: white; /* Yazı rengi */
+            padding: 10px; /* Yatay ve dikey iç boşluklar */
+            text-align: center; /* Yazıların ortalanması */
+        }
+
+        nav select {
+            padding: 5px;
+            font-size: 16px;
+            background-color: #555; /* Kategori seçim listesinin arkaplan rengi */
+            color: white;
+        }
+
+        nav select:hover {
+            background-color: #eb9898; /* Kategori seçim listesinin hover rengi */
+        }
+
+        /* Sayfa Arkaplanı */
+        body {
+            background-color: #3e3a3a; /* Sayfa arkaplan rengi */
+            font-family: Arial, sans-serif; /* Yazı tipi */
+            margin: 0; /* Kenar boşluğu sıfırlama */
+            padding: 0; /* İç boşluğu sıfırlama */
+        }
+
+        /* Kurs Listesi Stili */
+        ul#course-list {
+            list-style-type: none; /* Sırasız liste işaretini kaldırma */
+            padding: 0;
+        }
+
+        ul#course-list li {
+            margin: 5px 0;
+        }
+
+        ul#course-list a {
+            text-decoration: none; /* Link altı çizgisini kaldırma */
+            color: #333; /* Link rengi */
+            display: block; /* Linkleri blok öğesi yapma */
+            padding: 10px;
+            background-color: #eee; /* Linklerin arkaplan rengi */
+            border-radius: 5px; /* Köşe yuvarlama */
+            transition: background-color 0.3s; /* Renk değişimi için geçiş efekti */
+        }
+
+        ul#course-list a:hover {
+            background-color: #ddd; /* Linklere hover efekti */
+        }
+
+        /* Kurs Ayrıntıları Stili */
+        #course-details {
+            background-color: rgb(238, 238, 238);
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Gölge efekti */
+        }
+
+        /* Kategori seçim listesi stillendirmeleri */
+        #category-select {
+            border: none;
+            border-radius: 8px; /* Kenarları yuvarlatma */
+            padding: 10px;
+            font-size: 16px;
+            width: 200px; /* İsteğe bağlı: Genişliği ayarlayabilirsiniz */
+            cursor: pointer;
+        }
+
+        /* Açılır menü stillendirmeleri */
+        #category-select option {
+            background-color: #333; /* Gri arka plan rengi */
+            color: white; /* Metin rengi */
+            border-radius: 8px; /* Kenarları yuvarlatma */
+        }
+
+        #h1{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        }
+        #h2{
+            float: left;
+        }
+        #h2 a{
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        #h2 a:hover{
+            background-color: rgb(45, 44, 44);
+        }
+
+</style>
+  </head>
+
+<body>
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <nav class="main-nav">
+                      <!-- ***** Logo Start ***** -->
+                      <a href="index.html" class="logo">
+                          EDUCATE
+                      </a>
+                      <!-- ***** Logo End ***** -->
+                      <!-- ***** Menu Start ***** -->
+                      <ul class="nav">
+                          <li><a href="#">Veri Bilimi</a></li>
+                          <li><a href="#">Web Geliştirme</a></li>
+                          <li><a href="#">Mobil</a></li> 
+                          <li><a href="#">Oyun</a></li> 
+                          <li><a href="#">Programlama Dilleri</a></li> 
+                          <li><a href="giris.html">Çıkış Yap</a></li> 
+                         
+                      </ul>        
+                      <a class='menu-trigger'>
+                          <span>Menu</span>
+                      </a>
+                      <!-- ***** Menu End ***** -->
+                  </nav>
+              </div>
+          </div>
+      </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <section class="section main-banner" id="top" data-section="section1">
+      <video autoplay muted loop id="bg-video">
+          <source src="resimler/educate.mp4" type="video/mp4" />
+      </video>
+
+      <div class="video-overlay header-text">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="caption">
+              <h2 style="margin-top: 85%">SwiftUI ile iOS Programlama<br>
+            kursuna hoşgeldiniz!</h2>
+              <p>Bu Kurstan Öğrenecekleriniz;<br>
+                SwiftUI Temelleri ||| Kullanıcı Arabirimi Tasarımı
+                Veri Yönetimi ||| Çoklu Platform Desteği       
+              </p>
+          </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  </section>
+  <!-- ***** Main Banner Area End ***** -->
+
+  
+
+  <section class="upcoming-meetings" id="meetings">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h2 id="kategori">VİDEO MATERYALLER</h2>
+          </div>
+         
+          
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/rpJ-ke3_r_Q" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/pZX5TkmYWXE" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/q-W24SvfoY0" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/aYkvtyugDvw" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Oh9AqgUzvRI" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/yY4wWMzB2RU" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/FUrM6MqsLto" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/kB50fMFqV_o" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/bdGhE3CQrAs" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/eNOYVhP_wMk" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/RX9zLtkSCY8" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/kS-gDjdKkLM" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/NIRWXLAUwog" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/5uCB2nnjkbw" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/2LmueG8kFHw" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/XUMTaZviI-g" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Q2HswBAnxao" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/k0x9zxnk120" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/ZNzBc-m2a9Q" frameborder="0" allowfullscreen></iframe>
+
+        </div>
+        <div class="col-lg-4">
+            </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="upcoming-meetings" id="meetings">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h2 id="kategori">PDF DOKÜMANLARI</h2>
+          </div>
+          <div class="ifra" style="margin-left: 25%;">
+            <iframe src="pdf/swift-ile-ios-uygulama-gelistirme-yeni-baslayanlar-icin.pdf" width="70%" height="500px"></iframe>
+            <iframe src="pdf/ios_development_with_swift2_tutorial.pdf" width="70%" height="500px"></iframe>
+          </div>
+        </div>
+        <div class="col-lg-4">
+            </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="upcoming-meetings" id="meetings">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h2>KURS SONU TESTİ</h2>
+          </div>
+        </div>
+        <div class="col-lg-4" style="margin-left: 35%;">
+          <div class="categories">
+            <h4>SORULAR</h4>
+            <ul>
+              <li><a href="#">
+                <div class="question">
+                    <p>Soru 1: Bir iOS uygulamasında bir görünümün boyutunu ve konumunu ayarlamak için kullanılan nesne nedir?</p>
+                    <input type="radio" name="q1" value="20"> CGRect<br>
+                    <input type="radio" name="q1" value="0"> UIImageView<br>
+                    <input type="radio" name="q1" value="0"> ViewController
+                </div>
+              </a></li><br>
+              <li><a href="#">
+                <div class="question">
+                    <p>Soru 2: Swift ile iOS programlama yaparken, kullanıcı arayüzünü tasarlamak ve düzenlemek için hangi araç kullanılır?
+                    </p>
+                    <input type="radio" name="q2" value="20"> Xcode<br>
+                    <input type="radio" name="q2" value="0"> SwiftUI<br>
+                    <input type="radio" name="q2" value="0"> Interface Builder
+                </div>
+              </a></li><br>
+              <li><a href="#">
+                <div class="question">
+                    <p> Soru 3: iOS uygulamalarında nesneleri taşımak, düzenlemek ve silmek için kullanılan işlevler hangi başlık altında bulunur?
+                    </p>
+                    <input type="radio" name="q3" value="0"> Safe Area<br>
+                    <input type="radio" name="q3" value="0"> Tab View<br>
+                    <input type="radio" name="q3" value="20"> Edit Mode
+                </div>
+              </a></li><br>
+              <li><a href="#">
+                <div class="question">
+                    <p>Soru 4: Internationalization & Localization, bir iOS uygulamasının hangi özelliğine odaklanır?
+                    </p>
+                    <input type="radio" name="q4" value="0"> Uygulamanın hızını artırır.<br>
+                    <input type="radio" name="q4" value="20"> Uygulamanın çoklu dil ve bölgesel ayarlara uygun olmasını sağlar.<br>
+                    <input type="radio" name="q4" value="0">  Uygulamanın boyutunu ayarlar.
+                </div>
+              </a></li><br>
+              <li><a href="#">
+                <div class="question">
+                    <p>Soru 5: 
+                        import SwiftUI<br>
+                        @main<br>
+                        struct MyApp: App {<br>
+                            var body: some Scene {<br>
+                                WindowGroup {<br>
+                                    // Eksik kodu buraya ekleyin<br>
+                                }<br>
+                            }<br>
+                        }<br>
+                        Yukarıdaki Swift kodunda, bir Tab View içeren ve iki sekme (Tab) oluşturan bir uygulamanın nasıl başlatılacağını tamamlayın:
+                    </p>
+                    <input type="radio" name="q5" value="0">
+                    TabView {<br>
+                        // Birinci Sekme<br>
+                        Text("Birinci Sekme")<br>
+                            .tab {<br>
+                                Image(systemName: "1.circle")<br>
+                                Text("Birinci Sekme")<br>
+                            }<br>
+                        // İkinci Sekme<br>
+                        Text("İkinci Sekme")<br>
+                            .tab {<br>
+                                Image(systemName: "2.circle")<br>
+                                Text("İkinci Sekme")<br>
+                            }<br>
+                    }<br> 
+                    <input type="radio" name="q5" value="20">
+                    TabView {<br>
+                        // Birinci Sekme<br>
+                        Text("Birinci Sekme")<br>
+                            .Item {<br>>
+                                Text("Birinci Sekme")<br>
+                            }<br>
+                        // İkinci Sekme<br>
+                        Text("İkinci Sekme")<br>
+                            .Item {<br><br>
+                                Text("İkinci Sekme")<br>
+                            }<br>
+                    }<br>                 
+                </div>
+              </a></li><br>             
+            </ul>
+            <div id="result">
+                <button onclick="calculateScore()">Testi Kontrol Et</button>
+                <button id="resetButton" onclick="resetTest()">Testi Sıfırla ve Tekrar Deneyin</button>
+            </div>
+            <script>
+                function calculateScore() {
+                    // Her soru için cevapları al
+                    var q1Score = parseInt(document.querySelector('input[name="q1"]:checked').value);
+                    var q2Score = parseInt(document.querySelector('input[name="q2"]:checked').value);
+                    var q3Score = parseInt(document.querySelector('input[name="q3"]:checked').value);
+                    var q4Score = parseInt(document.querySelector('input[name="q4"]:checked').value);
+                    var q5Score = parseInt(document.querySelector('input[name="q5"]:checked').value);
+        
+                    // Toplam puanı hesapla
+                    var totalScore = q1Score + q2Score + q3Score + q4Score + q5Score;
+        
+                    // Sonucu göster
+                    var result = document.getElementById('result');
+                    if (totalScore >= 60) {
+                        result.innerHTML = '<p>Tebrikler! Testi başarıyla geçtin. Puanınız: ' + totalScore + '</p>';
+                    }
+                    if(totalScore <= 60){
+                        result.innerHTML = '<p>Üzgünüz, testi geçemediniz. Lütfen tekrar deneyin.</p>';
+                    }
+                }
+                
+        
+                function resetTest() {
+                    // Cevapları temizle
+                    var radios = document.querySelectorAll('input[type="radio"]');
+                    radios.forEach(function(radio) {
+                        radio.checked = false;
+                    });
+                    
+                    // Kullanıcıya mesaj göster
+                    alert('Test sıfırlandı. Yeniden başlayabilirsiniz.');
+                }
+            </script>
+            <style>
+                /* Soruları ve cevapları düzenleme */
+                    .question {
+                        margin-bottom: 20px;
+                    }
+
+                    p {
+                        font-size: 18px;
+                        margin-bottom: 10px;
+                    }
+
+                    input[type="radio"] {
+                        margin-right: 10px;
+                        vertical-align: middle;
+                    }
+
+                    /* Sonuç bölümü stillemesi */
+                    #result {
+                        text-align: center;
+                        margin-top: 20px;
+                    }
+
+                    button {
+                        font-size: 16px;
+                        padding: 10px 20px;
+                        background-color: #393939;
+                        color: #fff;
+                        border: 60%;
+                        cursor: pointer;
+                    }
+
+                    button:hover {
+                        background-color: #8c8d8e;
+                    }
+            </style>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  
+
+  <section class="contact-us" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 align-self-center">
+          <div class="row">
+            <div class="col-lg-12">
+              <form id="contact" action="" method="post">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h2>BİZİMLE İLETİŞİME GEÇİN</h2> <!--VERİSİ VERİTABANINDA TUTULABİLİR-->
+                  </div>
+                  <div class="col-lg-4">
+                    <fieldset>
+                      <input name="name" type="text" id="name" placeholder="ADINIZ...*" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-4">
+                    <fieldset>
+                    <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="MAİL ADRESİNİZ..." required="">
+                  </fieldset>
+                  </div>
+                  <div class="col-lg-4">
+                    <fieldset>
+                      <input name="subject" type="text" id="subject" placeholder="KONU...*" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <textarea name="message" type="text" class="form-control" id="message" placeholder="GÖRÜŞLERİNİZ..." required=""></textarea>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button type="submit" id="form-submit" class="button">GÖNDER</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="right-info">
+            <ul>
+              <li>
+                <h6>İletişim Numarası</h6>
+                <span>05392174859</span>
+              </li>
+              <li>
+                <h6>Mail Adresi</h6>
+                <span>dorhan23@gmail.com</span>
+              </li>
+              <li>
+                <h6>Adres</h6>
+                <span>Elazığ, Türkiye</span>
+              </li>
+              <li>
+                <h6>Website URL</h6>
+                <span>www.educate.tr</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Copyrıght © 2023 Educate Meetıng Co., Ltd. All Rıghts Reserved. 
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function (e) {
+          e.preventDefault();
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+    </script>
+</body>
+
+</body>
+</html>
