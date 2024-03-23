@@ -1,5 +1,5 @@
 
-**PROJENIN ANA TEMASI:** 
+**PROJENİN ANA TEMASI:** 
 
 Proje NetBeans IDE'de Java dilinde yazılmıştır. Basit bir kurs web uygulaması tasarlanmıştır. Kullanıcılar giriş yapabilir ve kayıt olabilir. Bu veriler veritabanında tutulmuştur. Proje, içeriği 
 bakımından ağırlıklı olarak bir frontend projesidir. Kullanıcı giriş yapıp kayıt olduğunda önüne kurs kategorilerinin çıktığı bir sayfa açılır. Burada toplam beş adet kategori bulunur ve her kategoride 
